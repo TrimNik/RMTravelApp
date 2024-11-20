@@ -1,0 +1,163 @@
+/* Gesamte Seite */
+body {
+    background-image: url('./images/background.jpg'); /* Pfad zum Cartoon-Hintergrundbild */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Container-Design */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Titel */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #f4a261; /* Sommerliches Orange */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hauptbuttons */
+.show-form-button {
+    padding: 15px;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.show-form-button:hover {
+    background-color: #f4a261;
+    transform: translateY(-2px);
+}
+
+/* Formularcontainer */
+.form-container {
+    display: none;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-top: 10px;
+}
+
+.form-container.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stil für das Eingabefeld Gruppenname und Gruppen-Code */
+.form input[type="text"],
+#groupCode {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f3e7;
+    font-size: 1em;
+    width: calc(100% - 32px);
+    margin-bottom: 10px;
+    color: #333;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formular-Buttons */
+.form button, #addMemberButton {
+    padding: 15px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form button:hover, #addMemberButton:hover {
+    background-color: #38b29a;
+    transform: translateY(-2px);
+}
+
+/* Gruppenliste */
+.groups-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Einzelne Gruppe */
+.group-item {
+    background-color: #f9f3e7;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #e6c895;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Teilnehmer-Stil */
+.member-item {
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Zurück-Button im Eingabefeld-Stil */
+.back-button {
+    padding: 10px;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button i {
+    font-size: 24px;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+.back-icon {
+    width: 38px; 
+    height: 38px;
+    transform: rotate(180deg);
+}
+

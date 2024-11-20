@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruppe erstellen</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/creategroup.css"
+</head>
+<body>
+    <button id="backButton" class="back-button">
+        <img src="../images/arrow.png" alt="zurück" class="back-icon">
+    </button>
+    <div class="container">
+        <h1>Weitere Informationen zur Gruppe</h1>
+        <p id="groupInfo"></p>
+
+        <form id="detailsForm">
+            <input type="text" id="country" placeholder="Land*" required>
+            <input type="text" id="city" placeholder="Stadt*" required>
+            <br>
+            <input type="text" id="typeofacc" placeholder="Unterkunftsart">
+            <input type="text" id="Name" placeholder="Unterkunft">
+            <br>
+            <label for="startDate">Wähle ein Startdatum:</label>
+            <input type="date" id="startDate" name="startDate" required>
+            <br>
+            <label for="endDate">Wähle ein Enddatum:</label>
+            <input type="date" id="endDate" name="endDate" required>
+            <br>
+            <button type="submit">hinzufügen</button>
+        </form>
+        
+    </div>
+
+    <script src="../js/creategroup.js"></script>
+</body>
+</html>

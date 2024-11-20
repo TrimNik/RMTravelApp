@@ -1,0 +1,51 @@
+#detailsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 80%; /* Passe die Breite an */
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#detailsForm input,
+#detailsForm button,
+#detailsForm label {
+    font-family: 'Arial', sans-serif; /* Modernere Schriftart */
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 90%; /* Einheitliche Breite */
+}
+
+#detailsForm input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#detailsForm label {
+    align-self: flex-start; /* Label linksbündig */
+    margin-left: 5%;
+    font-weight: bold;
+    color: #333; /* Dunklere Schriftfarbe für bessere Lesbarkeit */
+}
+
+#detailsForm button {
+    background-color: #f5ba42;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#detailsForm button:hover {
+    background-color: #ffa733;
+}
